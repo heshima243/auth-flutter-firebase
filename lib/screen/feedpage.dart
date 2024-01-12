@@ -17,9 +17,11 @@ class FeedPage extends StatelessWidget {
         actions: [
           IconAdd(),
           IconShare(),
-          CircleAvatar(
-            backgroundImage: AssetImage('images/julien.png'),
-            radius: 50,
+          ClipOval(
+            child: Image.asset(
+              'images/julien.png',
+              fit: BoxFit.contain,
+            ),
           )
         ],
       ),
